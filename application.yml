@@ -1,11 +1,10 @@
 spring:
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/krish/spring-cloud-config
-          search-paths:
-           - '*service'
+  datasource:
+    url: jdbc:mysql://localhost:3306/sample?createDatabaseIfNotExist=true
+    username: root
+    password: adobe
+    driver-class-name: com.mysql.jdbc.Driver
+
 
 
 
